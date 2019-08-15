@@ -1,0 +1,805 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-hk">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="投資美股,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="草根投資者" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1">
+
+
+
+
+
+
+<meta name="description" content="Interactive Brokers (簡稱IB)，是一間美國的經紀行，提供各種的投資工具，包括股票、期貨、期權、沽空、外匯和債券等，收費低廉，適合頻繁交易的投機者。IB開戶比較繁複，在網上搜索到很多相關文章，筆者並沒有細看。詳細的不說，這裏只會大概說說開戶過程的重點。內容是以香港人的身份開戶，來自其他地方的申請者，可能在細節上有區別。">
+<meta name="keywords" content="投資美股">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Interactive Brokers 開戶教學">
+<meta property="og:url" content="http://grassrootinvestor.github.io/2013/06/22/interactive-brokers-account-teaching/index.html">
+<meta property="og:site_name" content="草根投資者">
+<meta property="og:description" content="Interactive Brokers (簡稱IB)，是一間美國的經紀行，提供各種的投資工具，包括股票、期貨、期權、沽空、外匯和債券等，收費低廉，適合頻繁交易的投機者。IB開戶比較繁複，在網上搜索到很多相關文章，筆者並沒有細看。詳細的不說，這裏只會大概說說開戶過程的重點。內容是以香港人的身份開戶，來自其他地方的申請者，可能在細節上有區別。">
+<meta property="og:locale" content="zh-hk">
+<meta property="og:image" content="http://grassrootinvestor.github.io/images/IB-LogoRGB1.jpg">
+<meta property="og:updated_time" content="2019-08-15T07:40:45.027Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Interactive Brokers 開戶教學">
+<meta name="twitter:description" content="Interactive Brokers (簡稱IB)，是一間美國的經紀行，提供各種的投資工具，包括股票、期貨、期權、沽空、外匯和債券等，收費低廉，適合頻繁交易的投機者。IB開戶比較繁複，在網上搜索到很多相關文章，筆者並沒有細看。詳細的不說，這裏只會大概說說開戶過程的重點。內容是以香港人的身份開戶，來自其他地方的申請者，可能在細節上有區別。">
+<meta name="twitter:image" content="http://grassrootinvestor.github.io/images/IB-LogoRGB1.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://grassrootinvestor.github.io/2013/06/22/interactive-brokers-account-teaching/">
+
+
+
+
+
+  <title>Interactive Brokers 開戶教學 | 草根投資者</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">草根投資者</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">談投資和創業 by Wilson Tang</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分類
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            歸檔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            標籤
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-socialgroups">
+          <a href="/social" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-users"></i> <br>
+            
+            FB和Whatsapp
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-author">
+          <a href="/author" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            作者
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://grassrootinvestor.github.io/2013/06/22/interactive-brokers-account-teaching/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wilson Tang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="草根投資者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Interactive Brokers 開戶教學</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2013-06-22T09:00:15+08:00">
+                2013-06-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分類於</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Interactive-Brokers教學/" itemprop="url" rel="index">
+                    <span itemprop="name">Interactive Brokers教學</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><a href="/images/IB-LogoRGB1.jpg"><img src="/images/IB-LogoRGB1.jpg" alt="IB"></a></p>
+<p>Interactive Brokers (簡稱IB)，是一間美國的經紀行，提供各種的投資工具，包括股票、期貨、期權、沽空、外匯和債券等，收費低廉，適合頻繁交易的投機者。IB開戶比較繁複，在網上搜索到很多相關文章，筆者並沒有細看。詳細的不說，這裏只會大概說說開戶過程的重點。內容是以香港人的身份開戶，來自其他地方的申請者，可能在細節上有區別。<a id="more"></a></p>
+<p><strong>填表</strong></p>
+<p>首先，要上IB的網站填表，這個步驟頗費時，以下是在填表時，可能會猶疑的地方：</p>
+<ul>
+<li>帳戶類別請選Reg T Margin，可投資各類工具</li>
+<li>填寫投資經驗時，即使對相關工具(例如外匯、期貨)沒有經驗，也可填寫有一定經驗，否則另外有手續要辦</li>
+<li>W-8BEN表，每間經紀行都要填，即使你另外已有美股戶口，也要再填一次</li>
+<li>基礎貨幣填美元，之後可以轉<br><div><strong> </strong></div><br><div><strong>入錢</strong></div><br><div></div><br><div>填完資料後，要入錢到IB戶口，最低開戶金額是10000美元。其實，不需要電匯(TT)，可透過本地銀行轉賬(CHATS)。以下例子，是筆者由中銀香港(港元)的戶口，轉到IB花旗銀行(港元)的戶口。</div><br><div></div><br><div>入錢前，先在IB提交一項入錢的申請，選擇電匯的選項。</div><br><div></div><br><div>在中銀香港網上銀行，本地銀行轉賬&gt;特快轉賬(CHATS)，每次收費50港元</div><br><div></div><br><div>收款人資料：</div><br><div>收款銀行編號：006(花旗銀行)</div><br><div>收款賬戶號碼：17739993</div><br><div>收款人姓名：INTERACTIVE BROKERS LLC.</div><br><div></div><br>附言：For further benefit to: U1234567 / Your Name<br>(U1234567是你的IB戶口號碼，Your Name是你的名字)</li>
+</ul>
+<p>完成後，IB應該很快就會收到(大約一天)，接著IB會打電話給你，說錢已收，要約時間去IB的Office簽文件。</p>
+<p>這時也可留意email，有否IB的通知。</p>
+<p><strong>提交文件</strong></p>
+<p>身份證明文件(例如香港身份證)和住址證明(例如信用卡月結單)，筆者是透過網上提交，Scan並上載到IB。但應該也可以上IB Office時提交。</p>
+<p><strong>上IB Office簽文件</strong><br><strong>
+</strong>在電話裏約好時間，便上金鐘的IB Office簽文件，十至十五分鐘辦妥。</p>
+<p>再等IB確認，一兩天後，就會收到email，整個申請程序便完成。</p>
+<hr>
+<p><strong>Q&amp;A</strong></p>
+<p><strong>(來自原文留言：</strong></p>
+<p><strong><a href="http://grassrootinvestor.blogspot.com/2013/06/interactive-brokers.html" target="_blank" rel="noopener">http://www.grassrootinvestor.com/2013/06/interactive-brokers.html</a></strong></p>
+<p><strong><a href="http://grassrootinvestor.blogspot.com/2013/06/blog-post_28.html" target="_blank" rel="noopener">http://www.grassrootinvestor.com/2013/06/blog-post_28.html</a>):</strong></p>
+<p>Cash&gt;</p>
+<p>草根兄,<br>先謝謝你講解,但有問題問</p>
+<p>你話：For further benefit to: U1234567 / Your Name<br>(U1234567是你的IB戶口號碼，Your Name是你的名字)<br>如已有戶口號碼,點解仍要約時間去IB的Office簽文件?<br>是否temp.戶口號碼?</p>
+<p><em>草根投資者&gt;</em></p>
+<p><em>當你在網上填表後，IB會派給你戶口號碼，而這個是真實的戶口號碼。至於為何仍要上IB Office簽文件，那就要問問IB了，我也覺得奇怪 ^</em>^_</p>
+<hr>
+<p>dep169&gt;</p>
+<p>草根師兄，</p>
+<p>謝謝你的教學。但想問在IB開期指戶口是否有最低年薪要求(好似要USD40,000)？如沒有這數能否開嗎？</p>
+<p><em>草根投資者&gt;</em></p>
+<p><em>沒有留意有最低年薪要求(因為超過了:-P)，IB沒有查我的薪金證明，如果你說有$USD40,000收入，相信沒有問題，當然要注意風險</em></p>
+<p><em>另外，我知道有投資經驗的要求，我沒有投資期權和期指的經驗，但我填有經驗</em></p>
+<p>dep169&gt;</p>
+<p>炒期經驗是有的(多年)，可惜沒有薪金證明。:-(</p>
+<p>anyway, 謝謝你的回復。</p>
+<hr>
+<p>Calvin Koala&gt;</p>
+<p>lease provide the financial information below, which will be used by our Compliance Department to determine whether you are eligible to trade the investment products you select now or in the future. We never sell your information to any third parties, nor will we call you and suggest investments for you. The scope of our commitment to your privacy is detailed in our Privacy Policy.<br>淨資產值<em> (不包括主要居所) USD<br>流動資產淨值</em> (現金, 股票, 等等. 不包括退休金帳戶) USD<br>年淨收入<em> USD<br>總資產 </em> USD</p>
+<p>Is really need to provide? Some cannot meet. Thanks.</p>
+<p><em>草根投資者&gt;</em></p>
+<p><em>我只可以答IB沒有要求我出示證明，若不乎合有關要求，則閣下考慮是否能承受有關風險，才「提供」有關財務資料</em></p>
+<p>Calvin Koala&gt;</p>
+<p>Thanks</p>
+<hr>
+<p>Lo Fung&gt;</p>
+<p>我想問草根兄, 用IB戶口點樣拿返D錢放返銀行?</p>
+<p><em>草根投資者&gt;</em></p>
+<p><em>我未試過。剛剛上IB戶口睇，有「提款」的選項，方法是電匯，要輸入用戶的銀行戶口資料和提款金額，相信提交提款請求後，款項便會轉入用戶的銀行戶口裏。至於收費方面，根據IB網頁資料，每個月可以免費提款一次，如一個月內提款多過一次，額外的提款每次要收費$95港元。</em></p>
+<p><em>參考網址：</em><br><em><a href="https://www.interactivebrokers.com/cn/index.php?f=funding&amp;p=cash1" target="_blank" rel="noopener">https://www.interactivebrokers.com/cn/index.php?f=funding&amp;p=cash1</a></em><br><em><a href="https://www.interactivebrokers.com/cn/index.php?f=otherFees&amp;p=withdrawal" target="_blank" rel="noopener">https://www.interactivebrokers.com/cn/index.php?f=otherFees&amp;p=withdrawal</a></em></p>
+<hr>
+<p>Lo Fung&gt;</p>
+<p>多謝草根兄回覆, 我開戶中, 但去到存入款項時, 好似無草根兄IB教學中所說的透過本地銀行轉賬的選項, 而我又唔知點看, 唯有打上IB問, 佢話本地銀行唯一的入錢方法係只能做電匯, 港元比美元平及快, 若果要買美股, 可以入港元入去再轉美元, 個RATE比銀行好禁講喔!</p>
+<p><em>草根投資者&gt;</em></p>
+<p><em>可以照選電匯﹐但入錢時用本地銀行轉賬</em></p>
+<p><em>說詳細一點，在IB裏加入一項電匯的請求(實際上不是用電匯)，然後，在你的網上銀行選本地銀行轉賬(CHATS)，轉賬用港元，到入錢完成後在IB戶口換成美元。</em></p>
+<p><em>唔駛理IB講，我試過得，之前google過，有其他網友都係咁做，CHATS的手續費比電匯平，而且方便。</em></p>
+<p>Lo Fung&gt;</p>
+<p>非常多謝草根兄的詳細講解, 等我試下先!</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/投資美股/" rel="tag"># 投資美股</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/06/20/e7-a2-ba-e5-ae-9a-e6-94-b6-e6-b0-b4/" rel="next" title="確定收水">
+                <i class="fa fa-chevron-left"></i> 確定收水
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/06/23/e5-8f-8d-e5-bd-88-e5-9c-a8-e5-8d-b3-ef-bc-9f/" rel="prev" title="反彈在即？">
+                反彈在即？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Wilson Tang">
+          <p class="site-author-name" itemprop="name">Wilson Tang</p>
+           
+              <p class="site-description motion-element" itemprop="description">In this blog, I talk about investing, especially in tech sector, and other stuff.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">251</span>
+                <span class="site-state-item-name">文章</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">分類</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">35</span>
+                <span class="site-state-item-name">標籤</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/grassrootinvestor" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wilson Tang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 強力驅動
+</div>
+
+<div class="theme-info">
+  主題 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

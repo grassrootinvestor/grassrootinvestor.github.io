@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://grassrootinvestor.github.io/"/>
-  <updated>2019-08-27T13:42:39.425Z</updated>
+  <updated>2020-05-04T07:46:51.602Z</updated>
   <id>http://grassrootinvestor.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>又搬家了</title>
+    <link href="http://grassrootinvestor.github.io/2020/05/04/migrate-to-personal-blog/"/>
+    <id>http://grassrootinvestor.github.io/2020/05/04/migrate-to-personal-blog/</id>
+    <published>2020-05-04T08:00:00.000Z</published>
+    <updated>2020-05-04T07:46:51.602Z</updated>
+    
+    <content type="html"><![CDATA[<p>這是我最新的計劃，我會在新的<a href="https://wilsontang.me" target="_blank" rel="noopener">個人Blog</a> 繼續寫文章，而這個 Blog 就放在這裡留念好了 (grassrootinvestor.com 的 domain 也取消了)，同時，我仍然會在<a href="https://www.facebook.com/grassrootinvestor" target="_blank" rel="noopener">草根投資者 FB page</a> 上發布更新。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;這是我最新的計劃，我會在新的&lt;a href=&quot;https://wilsontang.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;個人Blog&lt;/a&gt; 繼續寫文章，而這個 Blog 就放在這裡留念好了 (grassrootinvestor.com 的
+      
+    
+    </summary>
+    
+      <category term="雜談" scheme="http://grassrootinvestor.github.io/categories/%E9%9B%9C%E8%AB%87/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>換成美元資產</title>
@@ -495,30 +518,6 @@
     </summary>
     
       <category term="Uncategorized" scheme="http://grassrootinvestor.github.io/categories/Uncategorized/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>投資組合@30-8-2014</title>
-    <link href="http://grassrootinvestor.github.io/2014/08/30/e6-8a-95-e8-b3-87-e7-b5-84-e5-90-8830-8-2014/"/>
-    <id>http://grassrootinvestor.github.io/2014/08/30/e6-8a-95-e8-b3-87-e7-b5-84-e5-90-8830-8-2014/</id>
-    <published>2014-08-30T03:45:52.000Z</published>
-    <updated>2019-08-15T07:40:44.980Z</updated>
-    
-    <content type="html"><![CDATA[<p>投資組合 QQQ,GDX,GILD,TSLA,FB,AAPL,GOOG,PCLN,BX</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;投資組合 QQQ,GDX,GILD,TSLA,FB,AAPL,GOOG,PCLN,BX&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="投資組合" scheme="http://grassrootinvestor.github.io/categories/%E6%8A%95%E8%B3%87%E7%B5%84%E5%90%88/"/>
     
     
   </entry>

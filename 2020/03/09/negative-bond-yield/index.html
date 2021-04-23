@@ -1,0 +1,728 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-hk">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="草根投資者" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1">
+
+
+
+
+
+
+<meta name="description" content="什麼是債券？簡單來說，債券就是借據。你買了發行機構的債券，你就是債主，你借錢給這個發行機構，每年她都會給利息，然後債券到期就還回債券的面值。然後這些債券就流入自由市場買賣，需求越高，價格便上升，利率便下降，這不難理解，比如公用股或房地產，我們就用這個方法去估計回報好不好。 那一般人的理解是，如果債券價格是 100 元，利率是 5%，即每年利息為 5 元，當債券價格升到 200 元，利息同樣是 5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="債券利率為負數要怎麼理解">
+<meta property="og:url" content="http://grassrootinvestor.github.io/2020/03/09/negative-bond-yield/index.html">
+<meta property="og:site_name" content="草根投資者">
+<meta property="og:description" content="什麼是債券？簡單來說，債券就是借據。你買了發行機構的債券，你就是債主，你借錢給這個發行機構，每年她都會給利息，然後債券到期就還回債券的面值。然後這些債券就流入自由市場買賣，需求越高，價格便上升，利率便下降，這不難理解，比如公用股或房地產，我們就用這個方法去估計回報好不好。 那一般人的理解是，如果債券價格是 100 元，利率是 5%，即每年利息為 5 元，當債券價格升到 200 元，利息同樣是 5">
+<meta property="og:locale" content="zh-hk">
+<meta property="og:updated_time" content="2021-04-23T14:04:04.958Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="債券利率為負數要怎麼理解">
+<meta name="twitter:description" content="什麼是債券？簡單來說，債券就是借據。你買了發行機構的債券，你就是債主，你借錢給這個發行機構，每年她都會給利息，然後債券到期就還回債券的面值。然後這些債券就流入自由市場買賣，需求越高，價格便上升，利率便下降，這不難理解，比如公用股或房地產，我們就用這個方法去估計回報好不好。 那一般人的理解是，如果債券價格是 100 元，利率是 5%，即每年利息為 5 元，當債券價格升到 200 元，利息同樣是 5">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://grassrootinvestor.github.io/2020/03/09/negative-bond-yield/">
+
+
+
+
+
+  <title>債券利率為負數要怎麼理解 | 草根投資者</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">草根投資者</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">談投資和創業</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分類
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            歸檔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            標籤
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-socialgroups">
+          <a href="/social" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-users"></i> <br>
+            
+            FB
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-author">
+          <a href="/author" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            作者
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://grassrootinvestor.github.io/2020/03/09/negative-bond-yield/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="草根投資者">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="草根投資者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">債券利率為負數要怎麼理解</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2020-03-09T09:00:00+08:00">
+                2020-03-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>什麼是債券？簡單來說，債券就是借據。你買了發行機構的債券，你就是債主，你借錢給這個發行機構，每年她都會給利息，然後債券到期就還回債券的面值。然後這些債券就流入自由市場買賣，需求越高，價格便上升，利率便下降，這不難理解，比如公用股或房地產，我們就用這個方法去估計回報好不好。</p>
+<p>那一般人的理解是，如果債券價格是 100 元，利率是 5%，即每年利息為 5 元，當債券價格升到 200 元，利息同樣是 5 元，利率便是 2.5% (=5/200)。那為什麼債券利率可以是負數？就算債券價格漲到很高，舉例說 10000 元好了，利率是 0.05%，仍然是正數。事實上，因為利息為正數，債券價格無論漲到多高，利率仍然是正數。</p>
+<p>因為「利率」這個詞語被濫用了，我們以上用的是 Current yield。但在市場上用的利率是 Yield to maturity，即考慮了債券面值、票面利率、價格和年期等因素後，投資者把債券持有至到期的回報率。Current yield 和 Yield to maturity 的顯著分別是， Yield to maturity 計算了金錢的時間價值，而 Current yield 則沒有。</p>
+<p>那債券利率 (回報率) 何時會為負數呢？舉例說，價格為 100 元，如果我計算將會收到的利息加上面值，總共也加起來低於 100 元，那我一定虧錢的，那回報率便是負數。</p>
+<p>執筆之時，日本、德國和法國公債的利率為負數，那就很奇怪，為什麼會有人願意買負回報的債券呢？那倒不如持有現金，不是更好嗎？</p>
+<p>投資負利率債券的原因：</p>
+<ul>
+<li>為了避險。資金便湧入債市，有大需求，債價自然繼續上升。投資者未必一定要持有債券至到期，只要價格上升，低買高賣，仍能賺錢</li>
+<li>操作匯率。例如買日本公債，即使虧錢，只要日元上升，之後兌回本地貨幣，仍可賺錢</li>
+<li>政府和基金等可能規定要買一定比例的債券</li>
+<li>好像還沒回答「那倒不如持有現金，不是更好嗎？」，我們的認知是，銀行的利率一定是正數，但當經濟出現通縮，負利率政策不是沒有可能。例如持有現金回報只有 -1%，和持有債券回報有 -0.5% 比較起來，那債券的回報便較好</li>
+</ul>
+<p>負債券利率的出現，反映市場憂慮經濟很差，甚至可能出現通縮，那就可理解到為什麼有人願意持有負利率的債券而不是現金。</p>
+<p>負債券利率是很罕見的，印象中是不可持續的。但世界沒有事是不可能的，當各國不停地量化寬鬆，那負債券利率和負利率政策也不是奇事。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/03/02/market-collapsed-covid/" rel="next" title="新冠肺炎股市崩跌 心態要怎樣調整">
+                <i class="fa fa-chevron-left"></i> 新冠肺炎股市崩跌 心態要怎樣調整
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/03/12/bear-market/" rel="prev" title="熊市？">
+                熊市？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="草根投資者">
+          <p class="site-author-name" itemprop="name">草根投資者</p>
+           
+              <p class="site-description motion-element" itemprop="description">In this blog, I talk about investing, especially in tech sector.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">276</span>
+                <span class="site-state-item-name">文章</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">分類</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">標籤</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/grassrootinvestor" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">草根投資者</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 強力驅動
+</div>
+
+<div class="theme-info">
+  主題 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

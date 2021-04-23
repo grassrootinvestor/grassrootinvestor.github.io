@@ -1,0 +1,750 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-hk">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="草根投資者" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1">
+
+
+
+
+
+
+<meta name="description" content="科技股大漲，現在人人都說投資Cloud，到底你又知不知道什麼是Cloud？ 作為一個軟件工程師，我比較容易理解每間Cloud公司做什麼的，但Cloud的光譜實在太闊了，很多Cloud公司並不是面向軟件工程師的，而是面向商業客戶的，所以只能說軟件工程師在理解Cloud方面有一點優勢，但不至於能理解全部Cloud公司。 這裡我盡量去用Layman的語言去講解好了，盡量不會涉及艱深的專業詞語。這會是一系">
+<meta property="og:type" content="article">
+<meta property="og:title" content="投資Cloud(一) 什麼是Cloud、SaaS、IaaS">
+<meta property="og:url" content="http://grassrootinvestor.github.io/2020/06/25/investing-cloud-1/index.html">
+<meta property="og:site_name" content="草根投資者">
+<meta property="og:description" content="科技股大漲，現在人人都說投資Cloud，到底你又知不知道什麼是Cloud？ 作為一個軟件工程師，我比較容易理解每間Cloud公司做什麼的，但Cloud的光譜實在太闊了，很多Cloud公司並不是面向軟件工程師的，而是面向商業客戶的，所以只能說軟件工程師在理解Cloud方面有一點優勢，但不至於能理解全部Cloud公司。 這裡我盡量去用Layman的語言去講解好了，盡量不會涉及艱深的專業詞語。這會是一系">
+<meta property="og:locale" content="zh-hk">
+<meta property="og:updated_time" content="2021-04-23T14:24:01.309Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="投資Cloud(一) 什麼是Cloud、SaaS、IaaS">
+<meta name="twitter:description" content="科技股大漲，現在人人都說投資Cloud，到底你又知不知道什麼是Cloud？ 作為一個軟件工程師，我比較容易理解每間Cloud公司做什麼的，但Cloud的光譜實在太闊了，很多Cloud公司並不是面向軟件工程師的，而是面向商業客戶的，所以只能說軟件工程師在理解Cloud方面有一點優勢，但不至於能理解全部Cloud公司。 這裡我盡量去用Layman的語言去講解好了，盡量不會涉及艱深的專業詞語。這會是一系">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://grassrootinvestor.github.io/2020/06/25/investing-cloud-1/">
+
+
+
+
+
+  <title>投資Cloud(一) 什麼是Cloud、SaaS、IaaS | 草根投資者</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">草根投資者</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">談投資和創業</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分類
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            歸檔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            標籤
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-socialgroups">
+          <a href="/social" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-users"></i> <br>
+            
+            FB
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-author">
+          <a href="/author" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            作者
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://grassrootinvestor.github.io/2020/06/25/investing-cloud-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="草根投資者">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="草根投資者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">投資Cloud(一) 什麼是Cloud、SaaS、IaaS</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2020-06-25T09:00:00+08:00">
+                2020-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>科技股大漲，現在人人都說投資Cloud，到底你又知不知道什麼是Cloud？</p>
+<p>作為一個軟件工程師，我比較容易理解每間Cloud公司做什麼的，但Cloud的光譜實在太闊了，很多Cloud公司並不是面向軟件工程師的，而是面向商業客戶的，所以只能說軟件工程師在理解Cloud方面有一點優勢，但不至於能理解全部Cloud公司。</p>
+<p>這裡我盡量去用Layman的語言去講解好了，盡量不會涉及艱深的專業詞語。這會是一系列的文章，Cloud的範圍太大，不能一次盡錄。</p>
+<h1 id="什麼是Cloud"><a href="#什麼是Cloud" class="headerlink" title="什麼是Cloud"></a>什麼是Cloud</h1><p>其實Cloud這個概念一早存在，有互聯網就有Cloud，不過我們不會叫它Cloud而已。你瀏覧一個網頁，其實就是透過網絡，去位於某處的電腦(稱為Server/伺服器)下載一個HTML文件，然後用瀏覧器去把這個HTML文件顯示出來。Cloud就是互聯網(準確一點是網絡，可以是互聯網或私人網絡)，我們通常用一個「雲」的圖像去代表互聯網，因此便有了用Cloud這個Buzzword去代替了網絡，大概因為講起Cloud就想起the sky is the limit這句話，投資者就是喜歡有想像空間。</p>
+<p>瀏覧網頁並不是什麼值得興奮的東西(對投資者而言)，因此我們不會叫瀏覧網頁作Browse through the Cloud。可是，是什麼時候我們把網絡叫作Cloud的？這就要說到SaaS。</p>
+<h1 id="什麼是SaaS"><a href="#什麼是SaaS" class="headerlink" title="什麼是SaaS"></a>什麼是SaaS</h1><p>Pre-Cloud年代，軟件是需要買的，你想處理文件、用PPT，你要下載一套Microsoft Office，更多時候可能去買一套Microsoft Office的光碟，然後安裝，輸入License key(證明你買了這套軟件)。如果你的年紀足夠大，經歷過這個年代，你可能曾經為了省錢寧願用盜版軟件，由於你可以用這套軟件而不連上網絡，軟件公司也很難偵測到和阻止你用盜版了。</p>
+<p>Cloud年代，一個創新的商業模式出現了，就是SaaS(Software as a Service)，你不可以買這套軟件，而是需要訂閱(租用)這套軟件，你必須登入和訂閱才能使用這套軟件，整個機制是通過網絡去完成。投資者對這個商業模式非常感興趣，因為用戶更難用盜版軟件了，更重要的是，Cloud公司得到Recurring revenue stream，用戶不是一次性購買，而是每月/每年都要付錢，這個金額比之前大得多。</p>
+<p>你一直訂閱，便能一直得到軟件的更新，這個是Service，所以叫做Software as a Service。</p>
+<h1 id="除了SaaS，也有IaaS、PaaS，這些又是什麼？"><a href="#除了SaaS，也有IaaS、PaaS，這些又是什麼？" class="headerlink" title="除了SaaS，也有IaaS、PaaS，這些又是什麼？"></a>除了SaaS，也有IaaS、PaaS，這些又是什麼？</h1><p>Cloud其實是一個光譜，一端是SaaS面向用戶，另一端是IaaS面向軟件工程師，而PaaS則在SaaS和IaaS之間，通常也是面向軟件工程師，我通常簡單地把PaaS看成IaaS。</p>
+<p>SaaS其實只是Cloud市場裡的一部分，但人們總是把IaaS、PaaS跟SaaS混為一談。SaaS是一套軟件的完成品(Final product)，例如Microsoft Office(或者叫Office 365)、Adobe Creative Cloud、Google Drive等，這些例子比較易理解，因為它同時面向個人用戶和商業用戶的，另外也有更多的是只面向商業用戶的，比如Coupa、okta等，如果你自己本身不是用家，相對較難理解這些公司的產品。SaaS的市場非常大，比如電商、數據分析、網絡安全、通訊等，有生意的地方就有相關的SaaS。</p>
+<p>一說起Cloud，軟件工程師第一時間想起的是Amazon的AWS、Microsoft Azure和Google Cloud這三大Cloud provider，當然也有其他的例如DigitalOcean、Alibaba Cloud等，這些Cloud provider稱為IaaS(Infrastructure as a Service)。她們的提供的是運算(Compute)、儲存(Storage)和傳輸(Networking/Bandwidth)的能力，其他公司租用他們位於世界各地的伺服器，讓軟件工程師能在IaaS平台上運用這些資源去開發軟件。如果用實體店去比喻，你可以想像IaaS就像電、水、店舖一樣，你租用這些資源，你想運用這些資源做什麼生意也可以。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/09/reopening-nasdaq-new-high/" rel="next" title="經濟重啟 NASDAQ破頂">
+                <i class="fa fa-chevron-left"></i> 經濟重啟 NASDAQ破頂
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/06/26/investing-cloud-2/" rel="prev" title="投資Cloud(二) 為什麼投資Cloud公司">
+                投資Cloud(二) 為什麼投資Cloud公司 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="草根投資者">
+          <p class="site-author-name" itemprop="name">草根投資者</p>
+           
+              <p class="site-description motion-element" itemprop="description">In this blog, I talk about investing, especially in tech sector.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">276</span>
+                <span class="site-state-item-name">文章</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-name">分類</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">標籤</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/grassrootinvestor" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什麼是Cloud"><span class="nav-number">1.</span> <span class="nav-text">什麼是Cloud</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什麼是SaaS"><span class="nav-number">2.</span> <span class="nav-text">什麼是SaaS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#除了SaaS，也有IaaS、PaaS，這些又是什麼？"><span class="nav-number">3.</span> <span class="nav-text">除了SaaS，也有IaaS、PaaS，這些又是什麼？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">草根投資者</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 強力驅動
+</div>
+
+<div class="theme-info">
+  主題 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
